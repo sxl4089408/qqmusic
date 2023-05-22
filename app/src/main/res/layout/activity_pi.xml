@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings.TXActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/PLL1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/teal_700"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TX"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="头像"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/pi_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/myself" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="45dp"
+                android:layout_weight="1"
+                android:background="@color/teal_700"
+                app:srcCompat="@mipmap/down5" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/PV1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/PLL1"
+            android:background="#00BCD4" />
+
+        <LinearLayout
+            android:id="@+id/PLL2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PV1"
+            android:background="@color/teal_700"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/User"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+
+                android:text="用户名"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/User_name"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="230dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="17dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/down5" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/PV2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/PLL2"
+            android:background="#00BCD4" />
+
+        <View
+            android:id="@+id/PV3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/PV2"
+            android:background="#00BCD4" />
+
+        <LinearLayout
+            android:id="@+id/PLL4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PV3"
+            android:background="@color/teal_700"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:text="更多"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="307dp"
+                android:layout_marginLeft="307dp"
+                android:layout_marginTop="17dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/down5" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

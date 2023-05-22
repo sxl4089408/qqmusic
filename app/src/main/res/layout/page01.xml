@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/L_b1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/background4"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <SearchView
+                android:id="@+id/search_sing"
+                android:layout_width="324dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:queryHint="请输入歌名">
+
+            </SearchView>
+
+            <ImageView
+                android:id="@+id/Yy"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/background4"
+                app:srcCompat="@mipmap/down1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/L_b1"
+            android:background="@drawable/background4"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/verticalview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+
+
